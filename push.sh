@@ -10,9 +10,10 @@ echo "Before"
 echo "------"
 git status
 
-echo "========================================="
+echo
+echo "======================================="
 echo "Automated commit on ${COMMIT_TIMESTAMP}"
-echo "-----------------------------------------"
+echo "---------------------------------------"
 git add --all
 git commit -m "Automated commit on ${COMMIT_TIMESTAMP}"
 git push -u origin master
@@ -22,4 +23,6 @@ echo "====="
 echo "After"
 echo "-----"
 git status
+
+echo
 
